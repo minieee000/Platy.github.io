@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OBET — Artist & Web3 Builder</title>
+<meta name="description" content="Original art, Web3 projects, and the journey behind $PLATY.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07080b;--card:#0e1117;--text:#f4f5f7;--muted:#969ca8;--line:#20242d;--accent:#b8ff5a;--accent2:#74d8ff;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 5%,rgba(116,216,255,.08),transparent 28%),radial-gradient(circle at 15% 20%,rgba(184,255,90,.06),transparent 25%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 24px}
+nav{position:fixed;z-index:20;top:0;left:0;right:0;background:rgba(7,8,11,.75);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Space Grotesk";font-weight:700;letter-spacing:.08em}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:24px;color:#b7bcc5;font-size:14px}.navlinks a:hover{color:#fff}.menu{display:none}
+.hero{min-height:92vh;display:grid;place-items:center;padding-top:72px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;border:1px solid #2b313b;padding:7px 11px;border-radius:999px;color:#cbd0d8;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+h1{font-family:"Space Grotesk";font-size:clamp(52px,8vw,92px);line-height:.95;margin:20px 0;letter-spacing:-.06em}h1 em{font-style:normal;color:var(--accent)}.lead{max-width:650px;color:#aeb4bf;font-size:18px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 17px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:14px}.btn.primary{background:var(--accent);color:#080a08;border-color:var(--accent)}.btn:hover{transform:translateY(-1px)}
+.art-card{aspect-ratio:1/1;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#151922,#090b0f);display:grid;place-items:center;overflow:hidden;position:relative}.art-card:before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(184,255,90,.32),transparent 65%);filter:blur(10px)}.platy{position:relative;font-size:145px;filter:drop-shadow(0 20px 30px #000);transform:rotate(-4deg)}.art-label{position:absolute;left:18px;bottom:18px;padding:9px 12px;background:rgba(0,0,0,.55);border:1px solid #2a3038;border-radius:10px;font-size:12px;color:#d5d8dd}
+section{padding:105px 0;border-top:1px solid rgba(255,255,255,.06)}.kicker{color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.section-title{font-family:"Space Grotesk";font-size:42px;letter-spacing:-.04em;margin:10px 0 15px}.section-copy{color:var(--muted);max-width:650px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}.card{background:linear-gradient(180deg,#101319,#0b0d11);border:1px solid var(--line);border-radius:20px;padding:24px}.card h3{font-family:"Space Grotesk";margin:0 0 8px}.card p{color:var(--muted);margin:0}.tag{display:inline-block;border:1px solid #2b313b;border-radius:999px;padding:4px 8px;font-size:11px;color:#bfc4cd;margin-bottom:16px}
+.platy-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}.big-token{border:1px solid #30372d;border-radius:28px;padding:50px;text-align:center;background:radial-gradient(circle at 50% 40%,rgba(184,255,90,.14),transparent 55%),#0c100c}.big-token .emoji{font-size:130px}.ticker{font-family:"Space Grotesk";font-size:40px;color:var(--accent);font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:35px}.gallery div{aspect-ratio:1/1;border-radius:16px;border:1px solid var(--line);background:linear-gradient(135deg,#171b23,#0a0c10);display:grid;place-items:center;color:#535b68;font-size:13px}
+.timeline{display:grid;gap:14px;margin-top:35px}.timeline .card{display:flex;gap:20px;align-items:flex-start}.year{min-width:70px;color:var(--accent);font-weight:800}
+footer{padding:45px 0;color:#737985;border-top:1px solid var(--line);font-size:13px}.footerin{display:flex;justify-content:space-between;gap:20px}.socials{display:flex;gap:16px}.socials a:hover{color:#fff}
+@media(max-width:800px){.navlinks{display:none}.menu{display:block;color:#aaa}.hero-grid,.platy-section{grid-template-columns:1fr;gap:35px}.hero{padding-top:115px;min-height:auto;padding-bottom:80px}.grid,.gallery{grid-template-columns:1fr}.section-title{font-size:34px}.footerin{flex-direction:column}.platy{font-size:110px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="brand" href="#">OBET<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#work">Work</a><a href="#platy">$PLATY</a><a href="#contact">Contact</a></div><div class="menu">MENU</div></div></nav>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">Artist • Web3 • Builder</span><h1>Draw it.<br>Build it.<br><em>Ship it.</em></h1><p class="lead">I’m an independent digital artist and Web3 builder creating original characters, community-driven projects, and experiments from the trenches.</p><div class="buttons"><a class="btn primary" href="#work">View my work</a><a class="btn" href="https://x.com/" target="_blank" rel="noopener">X / Twitter ↗</a></div></div>
+<div class="art-card"><div class="platy">🦆</div><div class="art-label">ORIGINAL ART / $PLATY</div></div>
+</div></section>
+
+<section id="about"><div class="wrap"><span class="kicker">01 / About</span><h2 class="section-title">A creative builder with an architecture background.</h2><p class="section-copy">I started with architecture and digital art, then found a home in Web3. Today I combine visual design, storytelling, community culture, and hands-on building into projects that feel personal rather than manufactured.</p>
+<div class="grid"><div class="card"><span class="tag">ART</span><h3>Original work</h3><p>Hand-drawn digital art, character design, fan art, illustrations, and visual identities.</p></div><div class="card"><span class="tag">WEB3</span><h3>Community native</h3><p>Years around crypto communities, memes, NFTs, tokens, and the culture surrounding them.</p></div><div class="card"><span class="tag">DESIGN</span><h3>Architecture mindset</h3><p>Composition, systems thinking, visual hierarchy, and a habit of turning ideas into tangible work.</p></div></div></div></section>
+
+<section id="work"><div class="wrap"><span class="kicker">02 / Selected work</span><h2 class="section-title">Projects & art</h2><p class="section-copy">A growing archive of characters, experiments, Web3 projects, and community artwork.</p>
+<div class="grid"><div class="card"><span class="tag">$PLATY</span><h3>Pump Platypus</h3><p>A trench-born platypus character built around original art, livestream creation, community energy, and the chaos of building in public.</p></div><div class="card"><span class="tag">CHARACTER ART</span><h3>Original characters</h3><p>Character concepts ranging from cute and stylized to anime-inspired designs, with a focus on strong silhouettes and personality.</p></div><div class="card"><span class="tag">WEB3 ART</span><h3>Community pieces</h3><p>Artwork made for communities, creators, tokens, and internet-native stories.</p></div></div>
+<div class="gallery"><div>ARTWORK 01</div><div>ARTWORK 02</div><div>ARTWORK 03</div><div>ARTWORK 04</div><div>ARTWORK 05</div><div>ARTWORK 06</div></div></div></section>
+
+<section id="platy"><div class="wrap platy-section"><div class="big-token"><div class="emoji">🦆</div><div class="ticker">$PLATY</div><p style="color:#969f90">PUMP PLATYPUS</p></div><div><span class="kicker">03 / Current project</span><h2 class="section-title">The trench's platypus.</h2><p class="section-copy">After making art for different Web3 communities and characters, I wanted to build something of my own. $PLATY is the first character I’m pushing as a personal project — built in public, drawn by hand, and documented along the way.</p><div class="buttons"><a class="btn primary" href="https://x.com/" target="_blank" rel="noopener">Follow the journey ↗</a><a class="btn" href="https://t.me/" target="_blank" rel="noopener">Telegram ↗</a></div></div></div></section>
+
+<section><div class="wrap"><span class="kicker">04 / Journey</span><h2 class="section-title">Still building.</h2><div class="timeline"><div class="card"><div class="year">NOW</div><div><h3>Independent creator</h3><p>Balancing architecture, digital art, Web3, and personal projects while building a recognizable creative identity.</p></div></div><div class="card"><div class="year">WEB3</div><div><h3>Community → creator</h3><p>From participating in communities and making fan art to creating characters and projects of my own.</p></div></div><div class="card"><div class="year">ROOTS</div><div><h3>Architecture</h3><p>A BS Architecture foundation that shaped how I think about space, composition, systems, and presentation.</p></div></div></div></div></section>
+
+<section id="contact"><div class="wrap"><span class="kicker">05 / Contact</span><h2 class="section-title">Let’s make something.</h2><p class="section-copy">For collaborations, community art, creative work, or Web3 projects, reach out through X.</p><div class="buttons"><a class="btn primary" href="https://x.com/" target="_blank" rel="noopener">Message me on X ↗</a></div></div></section>
+</main>
+
+<footer><div class="wrap footerin"><div>© 2026 OBET. Built from scratch.</div><div class="socials"><a href="https://x.com/" target="_blank" rel="noopener">X</a><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></div></div></footer>
+</body>
+</html>
